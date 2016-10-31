@@ -1,12 +1,10 @@
 class HomeController {
-  this.userName = "test";
 
   constructor() {
 
   }
 
   fetchTweets() {
-    console.log('username: ', this.userName);
     fetch('/api/tweets')
     .then(function(response) {
       response.json()

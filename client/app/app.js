@@ -1,13 +1,15 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
-import Common from './common/common';
-import Components from './components/components';
+import Home from './home/home';
+import About from './about/about';
+import Components from '../components/components';
 import AppComponent from './app.component';
 import 'normalize.css';
 
 angular.module('app', [
     uiRouter,
-    Common,
+    Home,
+    About,
     Components
   ])
   .config(($locationProvider) => {
