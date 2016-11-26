@@ -39,6 +39,10 @@ class Tweets {
     }
   }
 
+  extractTweetsIntoList(tweets) {
+
+  }
+
   readConfigurationFromDisk() {
     try {
       return JSON.parse(fs.readFileSync(this.confFile, 'utf8'));
