@@ -27,6 +27,7 @@ class Tweets {
         },
         (err, data, response) => {
           if (err) {
+            console.log(err);
             this.errors.addError("Unable to retrieve tweets for user ", twitterHandle);
           }
           return data;
