@@ -8,6 +8,7 @@ var Tweets = require('../models/tweets/tweets');
        Tweets.getTweetsForUser(handle, 20).then(function(response){
          console.log(response);
          let statusCode = Tweets.errors.hasErrors() ? 500 : 200;
+         if ()
          console.log("status code? ", statusCode);
          res.status(statusCode).json(response);
        });

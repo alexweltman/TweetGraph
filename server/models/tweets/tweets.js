@@ -6,7 +6,6 @@ var errors = require('../errors/errors');
 class Tweets {
 
   constructor() {
-    this.errors = [];
     this.userName = "Test";
     this.confFile = 'server/conf/twitter.json';
     this.errors = errors;
